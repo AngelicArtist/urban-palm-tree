@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Art_Controller">
+   <top>
+      <AnchorPane prefHeight="56.0" prefWidth="1357.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="Art_Home" mnemonicParsing="false" onAction="#Art_Home" prefHeight="53.0" prefWidth="130.0" text="Home">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="419.0" prefWidth="740.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="Question" layoutX="82.0" prefHeight="91.0" prefWidth="533.0" text="1. Who painted the famous work Starry Night?" wrapText="true">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="Option1" layoutX="82.0" layoutY="91.0" mnemonicParsing="false" onAction="#Option1_Clicked" prefHeight="75.0" prefWidth="244.0" style="-fx-background-color: #61d0ff; -fx-background-radius: 10px; -fx-border-radius: 12px;" text="Claude Monet">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Option4" layoutX="371.0" layoutY="210.0" mnemonicParsing="false" onAction="#Option4_Clicked" prefHeight="75.0" prefWidth="244.0" style="-fx-background-color: #61d0ff; -fx-background-radius: 10px; -fx-border-radius: 12px;" text="Leonardo da Vinci">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Option3" layoutX="82.0" layoutY="210.0" mnemonicParsing="false" onAction="#Option3_Clicked" prefHeight="75.0" prefWidth="244.0" style="-fx-background-color: #61d0ff; -fx-background-radius: 10px; -fx-border-radius: 12px;" text="Pablo Picasso">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Option2" layoutX="371.0" layoutY="91.0" mnemonicParsing="false" onAction="#Option2_Clicked" prefHeight="75.0" prefWidth="244.0" style="-fx-background-color: #61d0ff; -fx-background-radius: 10px; -fx-border-radius: 12px;" text="Vincent van Gogh">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

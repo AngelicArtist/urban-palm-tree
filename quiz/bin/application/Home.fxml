@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <top>
+      <AnchorPane prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #5b5454;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="H_Login" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#Home_Back_To_Login" prefHeight="40.0" prefWidth="104.0" text="login">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="H_Art" layoutX="132.0" layoutY="2.0" mnemonicParsing="false" onAction="#Home_to_Art" prefHeight="40.0" prefWidth="104.0" text="ART">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="H_Math" layoutX="248.0" layoutY="2.0" mnemonicParsing="false" onAction="#Home_to_Math" prefHeight="40.0" prefWidth="104.0" text="MATH">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="H_History" layoutX="367.0" layoutY="2.0" mnemonicParsing="false" onAction="#Home_to_History" prefHeight="40.0" prefWidth="104.0" text="HISTORY">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="H_Sciance" layoutX="482.0" layoutY="3.0" mnemonicParsing="false" onAction="#Home_to_Sciance" prefHeight="40.0" prefWidth="104.0" text="SCIANCE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="355.0" prefWidth="196.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="205.0">
+               <image>
+                  <Image url="@../../../../Desktop/proj/a_painting_of_a_surreal_landscape_with_v.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="155.0" fitWidth="203.0" layoutX="-1.0" layoutY="200.0">
+               <image>
+                  <Image url="@../../../../Desktop/proj/math-102023-1281244731-01.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="174.0" fitWidth="200.0">
+               <image>
+                  <Image url="@../../../../Desktop/proj/_ae343be3-b99d-423d-81bd-e43d6a535f54.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="185.0" fitWidth="200.0" layoutY="170.0">
+               <image>
+                  <Image url="@../../../../Desktop/proj/_79699252-7e24-450a-9d30-404554537a93.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="355.0" prefWidth="210.0" style="-fx-background-color: #5b5454;" BorderPane.alignment="CENTER">
+         <children>
+            <Circle layoutX="99.0" layoutY="178.0" radius="100.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.800000011920929" green="0.17919999361038208" blue="0.12800000607967377" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle layoutX="99.0" layoutY="178.0" radius="94.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.7368420958518982" green="0.17431773245334625" blue="0.07504872977733612" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.7763158082962036" green="0.6541179418563843" blue="0.6541179418563843" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Label alignment="TOP_LEFT" layoutX="34.0" layoutY="105.0" prefHeight="140.0" prefWidth="129.0" text="Welcome to our quiz game " wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="Leaderboard" layoutX="28.0" layoutY="316.0" mnemonicParsing="false" onAction="#Home_To_scorebord" prefHeight="40.0" prefWidth="151.0" text="Scoreboard">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
